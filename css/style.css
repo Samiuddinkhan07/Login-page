@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:ital,wght@0,500;1,400&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.form-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e86e3;
+}
+.form-login{
+    max-width: 438px;
+    background-color: #feffff;
+    width: 100%;
+    padding:30px;
+    border-radius: 10px;
+}
+.header-login{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+.formMain{
+    margin-top:30px;
+}
+.fieldInput{
+    margin-top: 10px;
+}
+.fieldLink{
+    text-align: center;
+    margin-top: 5px;
+    
+}
+.signupText a{
+    text-decoration: none;
+}
+.fieldLink a{
+    text-decoration: none;
+}
+.userEmailId{
+    height: 42px;
+    width: 100%;
+}
+.userPassword{
+    height: 42px;
+    width: 100%;
+}
+.fiedlLoginButton{
+   margin-top: 10px;
+}
+.fiedlLoginButton .loginBtn{
+    height: 33px;
+    width: 100%;
+    background-color: rgb(24,112,172);
+    color:white;
+    cursor: pointer;
+}
+.fieldLink:hover{
+    text-decoration: underline;
+}
+.signupText:hover a{
+    text-decoration: underline;
+}
+.signupText{
+    margin-top:4px;
+}
+.attemptText{
+    color:red;
+    font-size: 12px;
+}

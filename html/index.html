@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css"> 
+    <script src="/js/script.js"></script>
+    
+</head>
+<body>
+    <section class="form-container">
+        <div class="form-login">
+            <div class="form-content">
+                <header class="header-login">Login</header>
+                
+                <form action="#" class="formMain">
+                <div class="fieldInput">
+                    <input type="email" placeholder="Email" name="email" id="userEmail" class="userEmailId" required>
+                </div>
+                    <div class="fieldInput">
+                        <input type="password" placeholder="Password" name="userPassword" id="userpassword" class="userPassword">
+                    </div>
+                    <div class="fieldLink">
+                        <a href="#" >Forgot Password?</a>
+                    </div>
+                    <div class="fiedlLoginButton">
+                        <input type="button" value="LogIn" class="loginBtn" id="Submit" onclick="login()"> 
+                    </div> 
+                    <div class="signupText" >
+                        <span>Don't have a account?  <span><a href="#">Sign Up</a></span></span>
+                    </div>
+                    <div class="attemptNumber" style="display:flex">
+                    </div>
+                    <div class="attemptText" id="attemptText1">
+                        <p>Too many attempt please try again later in few seconds</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
