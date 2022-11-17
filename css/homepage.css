@@ -1,0 +1,33 @@
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-bottom: 1px solid #1e90ff;
+    z-index: 1030;
+    background: #ffffff ;
+}
+
+.header .navbar{
+    padding: 0px 16px;
+}
+
+
+.header .leftSideNavbar{
+    list-style-type:none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: -3%;
+}
+.navbar-brand{
+   margin-left:16px;
+   padding-top:0;
+   padding-bottom:0;
+}
+
+.headerLoginMain{
+    position: absolute;
+    list-style-type: none;
+}

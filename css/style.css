@@ -29,9 +29,54 @@
 .formMain{
     margin-top:30px;
 }
-.fieldInput{
+.fieldInputUser{
     margin-top: 10px;
+    border:1px solid #AAA9A8;
+    display: flex;
+    align-items: center;
 }
+.fieldInputPassword{
+    margin-top: 10px;
+    border:1px solid #AAA9A8;
+    display: flex;
+    align-items: center;
+}
+.fieldInputUser .errorField{
+    margin-right:10px;
+    background-color: red;
+    border-radius: 14px;
+    color: white;
+}
+.fieldInputPassword .errorField{
+    margin-right:10px;
+    background-color: red;
+    border-radius: 14px;
+    color: white;
+}
+.fieldInputUser .checkedField{
+    margin-right:10px;
+    background-color: green;
+    border-radius: 14px;
+    color: white;
+}
+.fieldInputPassword .checkedField{
+    margin-right:10px;
+    background-color: green;
+    border-radius: 14px;
+    color: white;
+}
+
+
+.fieldInputUser input[type="email"]{
+    border: none;
+    outline:none;
+}
+
+.fieldInputPassword input[type="password"]{
+    border: none;
+    outline:none;
+}
+
 .fieldLink{
     text-align: center;
     margin-top: 5px;
@@ -72,5 +117,5 @@
 }
 .attemptText{
     color:red;
-    font-size: 12px;
+    font-size: 12px ;
 }
