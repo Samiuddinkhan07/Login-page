@@ -1,13 +1,17 @@
 // This is javaScript is for only login Validation
-var attempt = 3;
+var attempt = 4;
+
+
+
+
 $(function(){
     $("#attemptText1").hide();
     $(".checkedField").hide();
     $(".errorField").hide();
     
-})
-function login(){
+});
 
+function login(){
 var userId=document.getElementById("userEmail").value;
 var userPassword=document.getElementById("userpassword").value;
 var loginbtn=document.getElementById("Submit");
@@ -16,8 +20,9 @@ if((userId == "user123") && (userPassword == "P@ssw0rd123")){
     $(".fieldInputUser").css('border','2px solid #00FF00')
     $(".fieldInputPassword").css('border','2px solid #00FF00')
     $(".checkedField").show();
+    $(".errorField").hide();
     alert("login successful");
-    return true;
+   // return true;
 }
 else{
     attempt--;
@@ -37,7 +42,6 @@ if(attempt==0){
     userId.disabled=true;
     userPassword.disabled=true;
     loginbtn.disabled=true;
-   
     setTimeout(() => {
         window.location.reload()
     }, 10000);

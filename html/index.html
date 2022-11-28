@@ -6,25 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page</title>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/9882575427.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9882575427.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@6.0.0/minified/introjs.min.css">
     <!-- css -->
     <link rel="stylesheet" href="/css/style.css"> 
-    <script src="/js/script.js"></script>
+    <script src="/js/script.js" defer></script>
+    <script src="/js/intro.js" defer></script>
     
 </head>
 <body>
     <section class="form-container">
-        <div class="form-login">
+        <div class="form-login" id="Intro">
             <div class="form-content">
                 <header class="header-login">Login</header>
                 
                 <form action="#" class="formMain">
-                <div class="fieldInputUser">
+                <div class="fieldInputUser" id="step2"> 
                     <input type="email" placeholder="Email" name="email" id="userEmail" class="userEmailId" required>
                     <i class="fa-regular fa-circle-check checkedField"></i><i class="fa-regular fa-circle-xmark errorField"></i>
                     
                 </div>
-                    <div class="fieldInputPassword">
+                    <div class="fieldInputPassword" id="step3">
+                        <!-- <i class="fa-solid fa-eye eyeOpen "></i> -->
                         <input type="password" placeholder="Password" name="userPassword" id="userpassword" class="userPassword" required>
                         <i class="fa-regular fa-circle-check checkedField"></i><i class="fa-regular fa-circle-xmark errorField"></i>
 
@@ -32,10 +35,10 @@
                     <div class="fieldLink">
                         <a href="#" >Forgot Password?</a>
                     </div>
-                    <div class="fiedlLoginButton">
+                    <div class="fiedlLoginButton" id="step4">
                         <input type="button" value="LogIn" class="loginBtn" id="Submit" onclick="login()"> 
                     </div> 
-                    <div class="signupText" >
+                    <div class="signupText" id="step5">
                         <span>Don't have a account?  <span><a href="#">Sign Up</a></span></span>
                     </div>
                     <div class="attemptNumber" style="display:flex">
@@ -47,5 +50,6 @@
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/intro.js@6.0.0/minified/intro.min.js"></script>
 </body>
 </html>
